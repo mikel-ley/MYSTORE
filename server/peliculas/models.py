@@ -39,3 +39,6 @@ def update_favoritos(sender, instance, **kwargs):
 # en el post delete se pasa la copia de la instance que ya no existe
 post_save.connect(update_favoritos, sender=PeliculaFavorita)
 post_delete.connect(update_favoritos, sender=PeliculaFavorita) 
+
+
+  
